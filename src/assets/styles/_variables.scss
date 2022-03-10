@@ -1,0 +1,52 @@
+// $primary-color: #06040e;
+// $secondary-color: #A9D2E0;
+// $accent-color: #ffec5d;
+// $text-color: #405f7d;
+
+$primary-color: #0a041f;
+$secondary-color: #c2f2ff;
+$accent-color: #ffc357;
+$text-color: #85a1c1;
+
+.glow-animation {
+    animation: glow 1s infinite alternate;
+}
+
+.glow-animation-text {
+    animation: glow-text 2 s infinite alternate;
+}
+
+.floating-animation {
+    animation: floating 3s infinite ease-in-out;
+}
+
+.fade-in-animation {
+    animation: fadein 2s;
+}
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px -10px $secondary-color;
+    }
+    to {
+      box-shadow: 0 0 10px 10px $secondary-color;
+    }
+  }
+
+  
+@keyframes glow-text {
+    to {
+      text-shadow: 0 0 20px $secondary-color;
+    }
+  }
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
