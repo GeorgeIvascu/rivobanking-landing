@@ -3,20 +3,20 @@
   "version": "0.1.0",
   "engines": {
     "node": "14.x",
-    "npm":"7.x"
+    "npm": "7.x"
   },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "vue-cli-service serve",
-    "heroku-postbuild": "npm run build"
+    "start": "node server.js"
   },
   "dependencies": {
     "@mdi/font": "^6.5.95",
     "animate.css": "^4.1.1",
     "core-js": "^3.6.5",
+    "express": "^4.17.3",
     "sass": "^1.49.9",
     "vue": "^2.6.11",
     "vue-cli-plugin-vuetify": "^2.4.7",
